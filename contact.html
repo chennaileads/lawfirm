@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from www.madebydesignesia.com/themes/Law Firm/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Mar 2026 12:18:28 GMT -->
+<head>
+    <meta charset="utf-8">
+    <title>Law Firm - Lawyer and Attorney Website Template</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Law Firm - Lawyer and Attorney Website Template" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    
+    <!-- CSS Files
+    ================================================== -->
+    <link id="bootstrap" href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link id="bootstrap-grid" href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+    <link id="bootstrap-reboot" href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.transitions.css" rel="stylesheet" type="text/css">
+    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.countdown.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (Free Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>   <style>
+        .custom-container {
+            max-width: 1280px;
+            width: 100%;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+        }
+
+        /* inner row: flex with gap, no Bootstrap dependency */
+        .custom-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .image-col {
+            flex: 1;
+            min-width: 260px;
+            padding: 1rem 0 1rem 1rem;
+        }
+
+        .content-col {
+            flex: 1;
+            min-width: 280px;
+            padding: 2rem 2rem 2rem 1rem;
+        }
+
+        /* image styling */
+        .office-img {
+            width: 100%;
+            height: auto;
+            border-radius: 1.5rem;
+            object-fit: cover;
+            display: block;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.4, 1.1), box-shadow 0.3s;
+        }
+
+        .office-img:hover {
+            transform: scale(1.01);
+            box-shadow: 0 25px 40px -14px rgba(0, 0, 0, 0.2);
+        }
+
+        /* typography - IMPROVED font sizes and weights */
+        .section-badge {
+            display: inline-block;
+            background: #eef2ff;
+            color: #1e40af;
+            font-size: 0.8125rem;  /* 13px - slightly larger */
+            font-weight: 700;       /* bolder for emphasis */
+            letter-spacing: 0.04em;  /* tighter but readable */
+            padding: 0.35rem 1rem;
+            border-radius: 40px;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 2.5rem;      /* increased from 2.2rem for stronger presence */
+            font-weight: 800;       /* extra bold for main heading */
+            letter-spacing: -0.025em;
+            background: linear-gradient(135deg, #0a2540, #2c3e66);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        /* address styling modern - improved typography */
+        .address-modern {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: #f9fafc;
+            padding: 1rem 1.25rem;   /* slightly more padding for breathing */
+            border-radius: 1.2rem;
+            transition: all 0.25s ease;
+            border: 1px solid #edf2f7;
+        }
+
+        .contact-item:hover {
+            background: #ffffff;
+            border-color: #cfdfed;
+            transform: translateX(4px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.03);
+        }
+
+        .icon-wrapper {
+            width: 2.8rem;           /* slightly larger for better icon presence */
+            height: 2.8rem;
+            background: #ffffff;
+            border-radius: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.02), 0 0 0 1px #e9edf2;
+            color: #1e4a76;
+            font-size: 1.35rem;      /* increased icon size */
+            transition: color 0.2s;
+        }
+
+        .contact-item:hover .icon-wrapper {
+            color: #0f3b5c;
+            background: #f0f6ff;
+            box-shadow: 0 4px 10px rgba(0, 80, 120, 0.08);
+        }
+
+        .contact-text {
+            flex: 1;
+            font-size: 1.05rem;      /* increased from 1rem for better readability */
+            font-weight: 500;
+            color: #1e2f3e;
+            letter-spacing: -0.01em;
+            line-height: 1.4;        /* improved line height for multi-line content */
+        }
+
+        /* phone/email main link styling */
+        .contact-text a {
+            text-decoration: none;
+            color: #1e4a76;
+            font-weight: 700;         /* bolder for links */
+            font-size: 1.05rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.2s;
+        }
+
+        .contact-text a i {
+            font-size: 0.9rem;
+            transition: transform 0.2s;
+        }
+
+        .contact-text a:hover {
+            color: #0c4e8c;
+        }
+
+        .contact-text a:hover i {
+            transform: translateX(4px);
+        }
+
+        /* subtext styling (hours, response time) */
+        .contact-text .sub-text {
+            display: block;
+            font-size: 0.75rem;       /* smaller but clear */
+            font-weight: 400;
+            color: #6c7e94;
+            margin-top: 0.25rem;
+            letter-spacing: normal;
+        }
+
+        /* brochure link - enhanced */
+        .brochure-link {
+            background: #eef2ff;
+            border-radius: 40px;
+            padding: 0.5rem 1.25rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.65rem;
+            font-weight: 700;          /* bold for CTA */
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .brochure-link i {
+            font-size: 1rem;
+        }
+
+        .brochure-link:hover {
+            background: #e0e9ff;
+            gap: 0.85rem;
+        }
+
+        /* download link text inside contact-item */
+        .contact-text .download-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        /* map marker / special tweak for PDF icon */
+        .contact-text .pdf-icon {
+            color: #d9534f;
+        }
+
+        /* responsive adjustments - with improved font scaling */
+        @media (max-width: 780px) {
+            body {
+                padding: 1.2rem;
+            }
+            .custom-row {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .image-col {
+                padding: 1rem 1rem 0 1rem;
+            }
+            .content-col {
+                padding: 0 1.5rem 2rem 1.5rem;
+            }
+            h3 {
+                font-size: 2rem;        /* slightly smaller on mobile but still prominent */
+                font-weight: 800;
+            }
+            .section-badge {
+                font-size: 0.7rem;
+                padding: 0.25rem 0.85rem;
+            }
+            .contact-item {
+                padding: 0.85rem 1rem;
+            }
+            .icon-wrapper {
+                width: 2.4rem;
+                height: 2.4rem;
+                font-size: 1.2rem;
+            }
+            .contact-text {
+                font-size: 0.95rem;
+            }
+            .contact-text a {
+                font-size: 0.95rem;
+            }
+            .brochure-link {
+                font-size: 0.85rem;
+                padding: 0.45rem 1rem;
+            }
+        }
+
+        /* additional micro interaction */
+        .address-modern p {
+            margin: 0;
+        }
+
+        hr {
+            margin: 0.75rem 0 0.5rem;
+            border: none;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .extra-note {
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #5f6c7a;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            justify-content: flex-start;
+        }
+</style>
+</style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="topbar" class="text-white bg-color">
+            <div class="container">
+                <div class="topbar-left sm-hide">
+                    <span class="topbar-widget tb-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </span>
+                </div>
+                <div class="topbar-right">
+                    <div class="topbar-right">
+                        <span class="topbar-widget"><a href="#">Privacy policy</a></span>
+                        <span class="topbar-widget"><a href="#">Request Quote</a></span>
+                        <span class="topbar-widget"><a href="#">FAQ</a></span>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- header begin -->
+       <header class ="transparent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img alt="" class="logo" src="images/logo-light.png" style="width: 125px;" />
+                                        <img alt="" class="logo-2" src="images/logo.png" style="width: 125px;" />
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <!-- mainmenu begin -->
+                                <ul id="mainmenu">
+                                    <li><a href="index.html">Home</a>
+                                        
+                                    </li>
+                                   
+                                    <li><a href="services.html">Services</a>
+                                        
+                                    </li>
+                                    
+                                    <li><a href="contact.html">Contact</a></li>
+                                     
+                                </ul>
+                                <!-- mainmenu close -->
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="h-phone md-hide"><span>Need&nbsp;Help?</span><i class="fa fa-phone"></i> +91 99949 18847</div>
+                                <span id="menu-btn"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+            <!-- section begin -->
+            <section id="subheader" class="jarallax text-white">
+                <img src="images/background/subheader2.jpg" class="jarallax-img" alt="">
+                <div class="center-y relative text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <h1>Contact Us</h1>
+                                <p>Reputation. Respect. Result.</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section close -->
+           <section aria-label="section" class="custom-container">
+    <div class="custom-container-inner" style="padding: 1.5rem 2rem 2rem 2rem;">
+        <div class="custom-row">
+            <!-- left column: image - Tamil Nadu / Chennai office visual -->
+            <div class="image-col">
+                <img 
+    src="https://images.pexels.com/photos/6077326/pexels-photo-6077326.jpeg?w=800&auto=compress" 
+    alt="Courtroom with judge's gavel and scales of justice" 
+    class="office-img"
+    onerror="this.onerror=null; this.src='https://placehold.co/800x600/4a2c2c/white?text=Court+of+Law'">       </div>
+
+            <!-- right column: office details - Tamil Nadu, India -->
+            <div class="content-col">
+                <span class="section-badge"><i class="fas fa-building" style="margin-right: 6px;"></i> India Headquarters</span>
+                <h3>TN Office <span style="font-size: 1.8rem; font-weight: 500;">— Chennai</span></h3>
+                
+                <address class="address-modern" style="font-style: normal;">
+                    <!-- Location - Tamil Nadu address -->
+                    <div class="contact-item">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <strong>No. 18, Rajaji Salai,</strong><br>
+                            George Town, Chennai - 600001,<br>
+                            Tamil Nadu, India
+                            <span style="display: block; font-size: 0.75rem; color: #5b6e8c; margin-top: 4px;">📍 Near Chennai Central & Egmore</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Phone - India format -->
+                    <div class="contact-item">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <a href="tel:+919994918847" style="text-decoration: none; color: #1f3b4c;">+91 99949 18847</a>
+                            <span style="display: block; font-size: 0.7rem; font-weight: 400; color: #5f7f9a;">Mon–Sat, 10AM–7PM IST</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <a href="mailto:chennai@example.com">law@example.com</a>
+                            <span style="display: block; font-size: 0.7rem; font-weight: 400; color: #5f7f9a;">Email us anytime</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Brochure Download (PDF) -->
+                    <div class="contact-item">
+                        <div class="icon-wrapper">
+                            <i class="fas fa-file-pdf" style="color: #dc2626;"></i>
+                        </div>
+                        <div class="contact-text">
+                            <a href="#" class="brochure-link" style="background: transparent; padding: 0; gap: 8px;">
+                                <i class="fas fa-download"></i> Download Brochure (PDF)
+                            </a>
+                            <span style="display: block; font-size: 0.7rem; font-weight: 400; margin-top: 4px;">Company profile | Tamil Nadu operations</span>
+                        </div>
+                    </div>
+                </address>
+
+                <!-- extra UI detail: local cultural touch / direction hint -->
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+            <section aria-label="section" class="text-light" data-bgcolor="#111111">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2 mb-sm-30 text-center">
+                            <h3>Do you have any question?</h3>
+                            <form name="contactForm" id="contact_form" class="form-border" method="post" action="https://www.madebydesignesia.com/themes/Law Firm/email.php">
+                                <div class="field-set">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" />
+                                </div>
+                                <div class="field-set">
+                                    <input type="text" name="email" id="email" class="form-control" placeholder="Your Email" />
+                                </div>
+                                <div class="field-set">
+                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone" />
+                                </div>
+                                <div class="field-set">
+                                    <textarea name="message" id="message" class="form-control" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="spacer-half"></div>
+                                <div id="submit">
+                                    <input type="submit" id="send_message" value="Submit Form" class="btn btn-custom" />
+                                </div>
+                                <div id="mail_success" class="success">Your message has been sent successfully.</div>
+                                <div id="mail_fail" class="error">Sorry, error occured this time sending your message.</div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="jarallax text-light">
+                <img src="images/background/2.jpg" class="jarallax-img" alt="">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12 wow fadeInRight" data-wow-delay=".2s">
+                            <div class="de_count ultra-big s2 border-light text-center">
+                                <h3 class="timer" data-to="20" data-speed="1000">20</h3>
+                                <span class="id-color">Years of Experience</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 p-lg-5  mb-sm-30 wow fadeInRight" data-wow-delay=".4s">
+                            <span class="p-title">About Us</span><br>
+                            <h2>Law Firm is Your Best Partner for Legal Solutions</h2>
+                        </div>
+                        <div class="col-lg-4 wow fadeInRight" data-wow-delay=".6s">
+                            <p>
+                                We take pride in the depth and breadth of experience that our team of lawyers brings to the table. With years of dedicated practice in various areas of law, our attorneys have honed their skills, developed specialized knowledge, and earned a reputation for excellence in their respective fields.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- content close -->
+        <a href="#" id="back-to-top"></a>
+        <!-- footer begin -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="widget">
+                            <a href="index.html"><img alt="" class="img-fluid mb20" src="images/logo-light.png" style="width: 125px;"></a>
+                            <p>We understand that legal issues can be some of the most challenging and stressful experiences in life. Whether you are dealing with a complex family matter, facing criminal charges, or navigating the intricacies of business law, our mission is to provide you with comprehensive, compassionate, and expert legal guidance. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="id-color mb20">Services</h4>
+                        <ul class="ul-style-2">
+                            <li>Corporate and M&A</li>
+                            <li>Construction and Real Estate</li>
+                            <li>Commercial Duspute Resolution</li>
+                            <li>Employment</li>
+                            <li>Banking and Finance</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h4 class="id-color">Contact Information</h4>
+                        <address class="s1">
+                                <span><i class="id-color fa fa-map-marker fa-lg"></i>Tamilnadu, Chennai</span>
+                                <span><i class="id-color fa fa-phone fa-lg"></i>+91 99949 18847</span>
+                                <span><i class="id-color fa fa-envelope-o fa-lg"></i><a href="mailto:contact@example.com">contact@example.com</a></span>
+                                <span><i class="id-color fa fa-file-pdf-o fa-lg"></i><a href="#">Download Brochure</a></span>
+                            </address>
+                       
+                </div>
+            </div>
+            <div class="subfooter">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            &copy; Copyright 2026 - Law Firm All Rights Reserverd. Designed by Chennai Leads
+                        </div>
+                        <div class="col-lg-6 text-lg-end">
+                            <div class="social-icons">
+                                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>  
+                                <a href="#"><i class="fa fa-instagram"></i></a>                            
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+        <!-- <div id="preloader">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div id="selector">
+        <div id="demo-rtl" class="sc-opt">
+            <div class="sc-icon">RTL</div><span class="sc-val">Click to Enable</span>
+        </div>
+        <div class="sc-opt sc-mt">
+            <div class="sc-icon"><i class="fa fa-eyedropper"></i></div>
+            <span class="opt tc1" data-color="scheme-01"></span>
+            <span class="opt tc2" data-color="scheme-02"></span>
+            <span class="opt tc3" data-color="scheme-03"></span>
+            <span class="opt tc4" data-color="scheme-04"></span>
+            <span class="opt tc5" data-color="scheme-05"></span>
+            <span class="opt tc6" data-color="scheme-06"></span>
+            <span class="opt tc7" data-color="scheme-07"></span>
+        </div>
+    </div>
+    <div id="purchase-now">
+        <a href="https://themeforest.net/cart/add_items?ref=designesia&amp;item_ids=29485331"><span>$</span>25</a>
+        <div class="pn-hover">Buy Now</div>
+    </div> -->
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/lenis.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/enquire.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/jarallax.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/designesia.js"></script>
+</body>
+
+
+<!-- Mirrored from www.madebydesignesia.com/themes/Law Firm/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 31 Mar 2026 12:18:29 GMT -->
+</html>
